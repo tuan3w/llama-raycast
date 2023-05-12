@@ -157,3 +157,4 @@ extensions/**/*.zip
 
 *.bin
 .vscode
+server/js
