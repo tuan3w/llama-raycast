@@ -1,6 +1,6 @@
 # LLaMa extension for Raycast
 
-A simple extension for Raycast that allows you to interact with [LLaMa.cpp](https://github.com/ggerganov/llama.cpp).
+A simple extension for Raycast that allows you to interact with [llama.cpp](https://github.com/ggerganov/llama.cpp).
 
 **NOTE**: This is for experimentation purpose only. If you want to work on something similar, please fork this repo.
 
