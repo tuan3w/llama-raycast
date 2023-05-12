@@ -1,0 +1,74 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "llama",
+  "title": "LLaMa Chat",
+  "description": "LLama extension for Raycast",
+  "icon": "command-icon.png",
+  "author": "noname",
+  "categories": [
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "chat",
+      "title": "Chat",
+      "description": "Chat with LLaMa bot",
+      "mode": "view"
+    },
+    {
+      "name": "create-command",
+      "title": "Create Command",
+      "description": "Create a command",
+      "mode": "view"
+    },
+    {
+      "name": "list-commands",
+      "title": "List Commands",
+      "description": "List available commands",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "serverUrl",
+      "title": "Llama server URL",
+      "description": "LLaMa server URL",
+      "default": "http://localhost:8000/",
+      "required": true,
+      "type": "textfield"
+    },
+    {
+      "name": "maxCharacters",
+      "title": "Number of tokens to predict",
+      "description": "number of tokens to predict",
+      "default": "1024",
+      "required": true,
+      "type": "textfield"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.51.0",
+    "eventsource-parser": "^1.0.0",
+    "nanoid": "^4.0.2",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "1.0.5",
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
